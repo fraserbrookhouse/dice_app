@@ -15,6 +15,9 @@ describe Dice do
     it 'returns number less than or eq to 6' do
       expect(subject.roll).to be <= 6
     end
+    it 'returns random number between 1 and 6' do
+      expect(subject.roll).to be_between(1, 6)
+    end
   end
 
 
